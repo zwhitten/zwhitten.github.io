@@ -9,6 +9,6 @@ Most of my career I've spent in the Java world. Everything from desktop Swing ap
 
 In my spare time I jump into whatever languages or frameworks have caught my interest at the time. I'm currently on an Elixir/Phoenix kick with some Rust on the side. Next week/month I may be on to something else.
 
-My posts here may span a range of topics, probably things I'm not an expert in because that's more fun for me. If you find any mistakes or have any suggestions (or better yet if you like something I've posted) feel free to drop my a line on Twitter, leave a comment, or send a pull request on github. 
+My posts here may span a range of topics, probably things I'm not an expert in because that's more fun for me. If you find any mistakes or have any suggestions (or better yet if you like something I've posted) feel free to drop me a line on Twitter, leave a comment, or send a pull request on github. 
 
 {% include icon-twitter.html username=site.twitter_username %}
