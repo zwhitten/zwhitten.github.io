@@ -194,6 +194,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-avatar
   jekyll-feed
 
 BUNDLED WITH
