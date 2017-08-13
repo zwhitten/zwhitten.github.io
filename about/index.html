@@ -8,38 +8,35 @@
     <meta name="description" content="Codes of Electric Sheep : Random collection of technical posts 
 ">
 
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
     <link rel="icon" href="/assets/images/favicon.png">
     <title>Codes of Electric Sheep</title>
   </head>
 
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="site-header">
-        <header class="inner">
-          <!--<a id="forkme_banner" href="">View on GitHub</a>-->
+            <!-- HEADER -->
         
         
-        <a class="site-title" href="/">Codes of Electric Sheep</a>
-          
-            <nav class="site-nav">
-              <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-              <label for="nav-trigger">
-                <span class="menu-icon">
-                  <svg viewBox="0 0 18 15" width="18px" height="15px">
-                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-                  </svg>
-                </span>
-              </label>
-
-              <div class="trigger">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <!-- <div class="container-fluid"> -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Codes of Electric Sheep</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+              <ul class="nav navbar-nav navbar-right">
                 
                   
                   
+                <li>
                   <a class="page-link" href="/about/">About</a>
+                </li>
                   
                 
                   
@@ -57,25 +54,30 @@
                   
                   
                 
-              </div>
-            </nav>
-          
-          <!--<a id="aboutme_banner"  href="/about">About</a>-->
-        </header>
-    </div>
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              </ul>
+            </div>
+
+          <!-- </div> -->
+        </nav>
+
+    <div id="wrap">
+      <div id="main" class="container clear-top" style="height: 100%">
+
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      
-      <section id="main_content" class="inner">
-      
-        <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
-
-  <div class="post-content">
-    <p>Hey thanks for checking out my page! My name is Zach. I’ve been a Software Engineer for over a decade now.
+          <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="">About</h1>
+        <p>Hey thanks for checking out my page! My name is Zach. I’ve been a Software Engineer for over a decade now.
 Most of my career I’ve spent in the Java world. Everything from desktop Swing applications to web services handling millions of requests a day.</p>
 
 <p>In my spare time I jump into whatever languages or frameworks have caught my interest at the time. I’m currently on an Elixir/Phoenix kick with some Rust on the side. Next week/month I may be on to something else.</p>
@@ -86,19 +88,20 @@ Most of my career I’ve spent in the Java world. Everything from desktop Swing 
 </span><span class="username">zwhitten</span></a></p>
 
 
-  </div>
+      </div>
+    </div>
+      </div>
 
-</article>
-
-      </section>
+    <!-- Side bar -->
+    <!-- <div class="sidebar_div">
+    <p>Sidebar</p>
+</div> -->
     </div>
 
         <!-- FOOTER  -->
 
-
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-      <div class="footer-col footer-col-1">
+    <footer class="footer">
+      <div class="col-lg-3 col-lg-offset-3">
         <ul class="contact-list">
           <li>
             
@@ -111,8 +114,7 @@ Most of my career I’ve spent in the Java world. Everything from desktop Swing 
             </li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
+      <div class="col-lg-3">
         <ul class="social-media-list">
           
           <li>
@@ -131,14 +133,11 @@ Most of my career I’ve spent in the Java world. Everything from desktop Swing 
           
         </ul>
       </div>
-        <div class="footer-col footer-col-3">
-          <ul>
+    </footer>
 
-          </ul>
-        </div>
-      </footer>
-    </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/bootstrap.min.js"></script>
     
      <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -152,4 +151,5 @@ Most of my career I’ve spent in the Java world. Everything from desktop Swing 
 </script>
     
 
+  </body>
 </html>
