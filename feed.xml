@@ -1,8 +1,213 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-08-13T15:05:13-04:00</updated><id>/</id><title type="html">Codes of Electric Sheep</title><subtitle>Random collection of technical posts 
-</subtitle><entry><title type="html">Site Theme Switch</title><link href="/2017/08/13/site-theme-switch.html" rel="alternate" type="text/html" title="Site Theme Switch" /><published>2017-08-13T13:48:00-04:00</published><updated>2017-08-13T13:48:00-04:00</updated><id>/2017/08/13/site-theme-switch</id><content type="html" xml:base="/2017/08/13/site-theme-switch.html">&lt;p&gt;&lt;strong&gt;Just a quick note to anyone who stumbles across the git history of this site.&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="https://zdub.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zdub.io/" rel="alternate" type="text/html" /><updated>2017-10-01T13:19:21-04:00</updated><id>https://zdub.io/</id><title type="html">Codes of Electric Sheep</title><subtitle>Random collection of technical posts 
+</subtitle><entry><title type="html">The Simplest Git Workflow</title><link href="https://zdub.io/2017/10/01/the-simplest-git-workflow.html" rel="alternate" type="text/html" title="The Simplest Git Workflow" /><published>2017-10-01T06:34:00-04:00</published><updated>2017-10-01T06:34:00-04:00</updated><id>https://zdub.io/2017/10/01/the-simplest-git-workflow</id><content type="html" xml:base="https://zdub.io/2017/10/01/the-simplest-git-workflow.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;I love git. It was a breath of fresh air coming from a heavier Version Control System at a previous job. Git makes coding dare I say, fun? 
+Git is extremely powerful. For people unfamiliar with Git it can seem daunting or confusing, either because they’re coming from another VCS or they’ve never used a VCS at all (Shouldn’t they be teaching &lt;em&gt;something&lt;/em&gt; in schools these days?)&lt;/p&gt;
+
+&lt;p&gt;Below I’ll outline what I think is one of the simplest workflows you can use on your teams or in your own personal development. The goal is to avoid using some of the more advanced git features which can (when used incorrectly) get developers into trouble.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assumptions:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You have git installed and configured&lt;/li&gt;
+  &lt;li&gt;There is a remote repository of some kind you want to work with&lt;/li&gt;
+  &lt;li&gt;Your team doesn’t already have a policy in place about doing things like rebasing before merging into master, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;optional-setup&quot;&gt;Optional Setup&lt;/h2&gt;
+&lt;p&gt;If you don’t already have a remote repository setup with write access, you can easily fork an existing repository on github.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to the github page for a project you’d like to contribute to, ex: &lt;a href=&quot;https://github.com/github/gitignore&quot;&gt;github/gitignore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;In the top right corner click the &lt;code class=&quot;highlighter-rouge&quot;&gt;fork&lt;/code&gt; button. This creates a copy of the repository under your account that you will have full read/write access to.&lt;/li&gt;
+  &lt;li&gt;On your own repository page click the &lt;code class=&quot;highlighter-rouge&quot;&gt;Clone or Download&lt;/code&gt; button to get the repository URL for use in the cloning step below.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;Great you’re still here! We’ll first want to pull down a git repository. As an example we’ll use github’s repo with a collection of gitignore files by language type. (If you created a fork in the optional setup replace the git URL below with the URL to your personal repository)&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/zwhitten/gitignore.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Which should result in something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git clone https://github.com/zwhitten/gitignore.git
+Cloning into &lt;span class=&quot;s1&quot;&gt;'gitignore'&lt;/span&gt;...
+remote: Counting objects: 6896, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;.
+remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;14/14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;.
+remote: Total 6896 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 6&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 11 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, pack-reused 6880
+Receiving objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;6896/6896&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, 1.37 MiB | 1.67 MiB/s, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;.
+Resolving deltas: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3686/3686&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;.
+Checking connectivity... &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will create a directory on your local machine called “gitignore”. The rest of the commands will be run from inside this directory so go ahead and go into it&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;gitignore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;working-on-changes-locally&quot;&gt;Working on changes locally&lt;/h2&gt;
+
+&lt;p&gt;By default git will be on the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch when you first open up the project. Once you know the bug or feature you will be working on, you will want to create a feature branch to do this work. Different teams have different conventions for how they like to name their branches. Some like to prefix their feature branches with “feature/” others don’t. For our simple scenario since we won’t actually be pushing our feature branch remotely it won’t matter &lt;em&gt;too&lt;/em&gt; much. 
+The gitignore project I checked out contains .gitignore files which can be used in various project types to tell git to ignore specific files or directories. Maybe your team likes to use (but not check in) a series of files ending in “.xyz” in their Java projects and you think the entire github community could benefit from doing the same.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-local-branch&quot;&gt;Create a local branch&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First we’ll create a feature branch for this change called &lt;code class=&quot;highlighter-rouge&quot;&gt;ignore_xyz&lt;/code&gt;:
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git checkout -b ignore_xyz
+Switched to a new branch &lt;span class=&quot;s1&quot;&gt;'ignore_xyz'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;OR&lt;/p&gt;
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git branch ignore_xyz
+ % git checkout ignore_xyz
+Switched to branch &lt;span class=&quot;s1&quot;&gt;'ignore_xyz'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;The first option is a shortcut that does the same thing as the second option: Creates the new branch with the specified name and then switches to it.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;make-your-changes&quot;&gt;Make your changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now that we’re on the feature branch we just created we can make our changes to the Java.gitignore file in the directory by adding “*.xyz” to the top of the file. 
+Git allows us to see what changes have been made on our branch by running:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git status
+On branch ignore_xyz
+Changes not staged &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;commit:
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git add &amp;lt;file&amp;gt;...&quot;&lt;/span&gt; to update what will be committed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git checkout -- &amp;lt;file&amp;gt;...&quot;&lt;/span&gt; to discard changes &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;working directory&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+	modified:   Java.gitignore
+
+no changes added to commit &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git add&quot;&lt;/span&gt; and/or &lt;span class=&quot;s2&quot;&gt;&quot;git commit -a&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;This is telling us that we’ve modified one file on our branch and even gives us hints about how to revert it or move forward with the change.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We next add our changed file to the staging area which is git’s way of collecting changes to be put into a commit:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git add Java.gitignore
+ % git status
+On branch ignore_xyz
+Changes to be committed:
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git reset HEAD &amp;lt;file&amp;gt;...&quot;&lt;/span&gt; to unstage&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+	modified:   Java.gitignore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Our change is now staged and ready to be committed to our feature branch.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Commits require a message to be added. It’s a good idea (and helpful to anyone reviewing your change) to include a useful message that describes what your commit contains:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Adding xyz to Java.gitignore file&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ignore_xyz 8eafff2] Adding xyz to Java.gitignore file
+ 1 file changed, 1 insertion&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+ % git status
+On branch ignore_xyz
+nothing to commit, working tree clean
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Great! We successfully committed our change, but currently it only exists in our local feature branch. We’ll want to merge this into the master branch to share with everyone else.&lt;/p&gt;
+
+&lt;h3 id=&quot;switch-back-to-master&quot;&gt;Switch back to &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;We’ll switch back over to the master branch using the &lt;code class=&quot;highlighter-rouge&quot;&gt;checkout&lt;/code&gt; command. After you switch back you’ll notice that your change no longer exists in the file. Don’t worry! It’s still there on your feature branch. If you’re working with a remote repository that other people may have changed since you started working it’s also a good ideal to &lt;code class=&quot;highlighter-rouge&quot;&gt;pull&lt;/code&gt; the latest changes down:
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git checkout master
+ % git pull origin master
+Already up-to-date.
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;At this point your master branch should be up to date with the latest changes in the remote repo (the changes out on github), so we should be safe to merge our changes in.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;merge-your-changes-to-master&quot;&gt;Merge your changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;We’ll use the &lt;em&gt;merge&lt;/em&gt; comand to merge our feature branch into the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch, and assuming all goes well you should see something like:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git merge ignore_xyz
+Updating 7792e50..8eafff2
+Fast-forward
+ Java.gitignore | 1 +
+ 1 file changed, 1 insertion&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;pushing-changes-out&quot;&gt;Pushing changes out&lt;/h2&gt;
+&lt;p&gt;Since you’ll want the world to see your changes, you will now push your local &lt;em&gt;master&lt;/em&gt; branch out to the &lt;em&gt;master&lt;/em&gt; branch on github. If you forked an existing repository up at the beginning this would be the &lt;em&gt;master&lt;/em&gt; branch there on your own personal fork of the project.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Since we pulled the latest just before we merged there hopefully shouldn’t be any conflicts or errors. If there are errors git is generally pretty good about telling you what happened. One source of errors could be that someone else pushed a change into the master branch between the time you updated and the time you tried to push your change. Re-pulling &lt;em&gt;master&lt;/em&gt; and resolving any conflicts should take care of this.&lt;/p&gt;
+
+&lt;h2 id=&quot;conflicts&quot;&gt;Conflicts?!?!?&lt;/h2&gt;
+&lt;p&gt;With multiple developers working in the same code there’s always going to be a possiblity of a conflict. This just means that you and someone else have both edited a file at the same time and git isn’t sure how to include both changes. Back when we switched to our &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch and pulled down the latest code we might have pulled down another developers changes to the same file we were working in. If this happens, when you try to merge you might see a message similar to:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git merge ignore_xyz
+Auto-merging Java.gitignore
+CONFLICT &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;content&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Merge conflict &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;Java.gitignore
+Automatic merge failed; fix conflicts and &lt;span class=&quot;k&quot;&gt;then &lt;/span&gt;commit the result.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Someone else modified Java.gitignore too. If we open up the file now, git has indicated the areas which need our attention:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&amp;lt; HEAD
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.abc
+&lt;span class=&quot;o&quot;&gt;=======&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.xyz
+&lt;span class=&quot;gp&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;ignore_xyz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;The area between the “HEAD” line and the “======” line indicates the changes that we pulled in from the remote repository while the changes below the “=======” line and the “ignore_xyz” line indicate our own changes. In this case, someone added “&lt;em&gt;.abc” at the same location we added “&lt;/em&gt;.xyz”. Since we don’t want to mess up their work the solution would be to leave both lines in place. We then remove the “««”, “======”, and “»»” lines to let git know we’ve sorted it out.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git status
+On branch develop
+You have unmerged paths.
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;fix conflicts and run &lt;span class=&quot;s2&quot;&gt;&quot;git commit&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git merge --abort&quot;&lt;/span&gt; to abort the merge&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+Unmerged paths:
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git add &amp;lt;file&amp;gt;...&quot;&lt;/span&gt; to mark resolution&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+	both modified:   Java.gitignore
+
+no changes added to commit &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git add&quot;&lt;/span&gt; and/or &lt;span class=&quot;s2&quot;&gt;&quot;git commit -a&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Even though we’ve fixed the conflict we have to let git know by staging the combined file(s) and committing the results.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git add Java.gitignore
+ % git status
+On branch develop
+All conflicts fixed but you are still merging.
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git commit&quot;&lt;/span&gt; to conclude merge&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+Changes to be committed:
+
+	modified:   Java.gitignore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;And of course we’ll want to provide a useful commit message to indicate that the new commit was the result of a merge:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; % git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Merged Java.gitignore change for .xyz file extensions&quot;&lt;/span&gt;
+ % git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="git" /><category term="github" /><category term="workflow" /><summary type="html">Why?</summary></entry><entry><title type="html">Site Theme Switch</title><link href="https://zdub.io/2017/08/13/site-theme-switch.html" rel="alternate" type="text/html" title="Site Theme Switch" /><published>2017-08-13T13:48:00-04:00</published><updated>2017-08-13T13:48:00-04:00</updated><id>https://zdub.io/2017/08/13/site-theme-switch</id><content type="html" xml:base="https://zdub.io/2017/08/13/site-theme-switch.html">&lt;p&gt;&lt;strong&gt;Just a quick note to anyone who stumbles across the git history of this site.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;When I first started this blog I used the &lt;a href=&quot;https://github.com/pages-themes/slate&quot;&gt;slate&lt;/a&gt; theme since it was suppored by github pages. Out of the box this is great since it gave a clean interface with basically zero work; however, making even simple changes required a lot more work than I thought they should.&lt;/p&gt;
 
 &lt;p&gt;The current iteration of Jekyll obscures a lot of what’s happening with the themes and overriding styles required basically pulling down the git repo of the theme, including the various layouts and styles, and then making the tweaks I desired.&lt;/p&gt;
 
-&lt;p&gt;I was not a fan of this, so I refactored most of the styling to use &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;bootstrap&lt;/a&gt; instead. The look of the site is virtually unchanged, but my piece of mind is much improved.&lt;/p&gt;</content><author><name></name></author><category term="jekyll-theme" /><category term="jekyll" /><category term="bootstrap" /><summary type="html">Just a quick note to anyone who stumbles across the git history of this site.</summary></entry><entry><title type="html">Eventually I will have real posts!</title><link href="/2017/05/14/eventually-i-will-have-real-posts.html" rel="alternate" type="text/html" title="Eventually I will have real posts!" /><published>2017-05-14T09:15:00-04:00</published><updated>2017-05-14T09:15:00-04:00</updated><id>/2017/05/14/eventually-i-will-have-real-posts</id><content type="html" xml:base="/2017/05/14/eventually-i-will-have-real-posts.html">&lt;p&gt;Slowly but surely making progress. Who would have guessed having an infant in the house would slow things down so much?&lt;/p&gt;</content><author><name></name></author><category term="misc" /><category term="meta" /><summary type="html">Slowly but surely making progress. Who would have guessed having an infant in the house would slow things down so much?</summary></entry></feed>
+&lt;p&gt;I was not a fan of this, so I refactored most of the styling to use &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;bootstrap&lt;/a&gt; instead. The look of the site is virtually unchanged, but my piece of mind is much improved.&lt;/p&gt;</content><author><name></name></author><category term="jekyll-theme" /><category term="jekyll" /><category term="bootstrap" /><summary type="html">Just a quick note to anyone who stumbles across the git history of this site.</summary></entry><entry><title type="html">Eventually I will have real posts!</title><link href="https://zdub.io/2017/05/14/eventually-i-will-have-real-posts.html" rel="alternate" type="text/html" title="Eventually I will have real posts!" /><published>2017-05-14T09:15:00-04:00</published><updated>2017-05-14T09:15:00-04:00</updated><id>https://zdub.io/2017/05/14/eventually-i-will-have-real-posts</id><content type="html" xml:base="https://zdub.io/2017/05/14/eventually-i-will-have-real-posts.html">&lt;p&gt;Slowly but surely making progress. Who would have guessed having an infant in the house would slow things down so much?&lt;/p&gt;</content><author><name></name></author><category term="misc" /><category term="meta" /><summary type="html">Slowly but surely making progress. Who would have guessed having an infant in the house would slow things down so much?</summary></entry></feed>

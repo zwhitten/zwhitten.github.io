@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="Codes of Electric Sheep : Random collection of technical posts 
+">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <title>Codes of Electric Sheep</title>
+  </head>
+
+  <body>
+            <!-- HEADER -->
+        
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <!-- <div class="container-fluid"> -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Codes of Electric Sheep</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+              <ul class="nav navbar-nav navbar-right">
+                
+                  
+                  
+                <li>
+                  <a class="page-link" href="/about/">About</a>
+                </li>
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              </ul>
+            </div>
+
+          <!-- </div> -->
+        </nav>
+
+    <div id="wrap">
+      <div id="main" class="container clear-top" style="height: 100%">
+
+
+    <!-- MAIN CONTENT -->
+          <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h1 class="" itemprop="name headline">The Simplest Git Workflow</h1>
+        <p class="text-muted">
+        <time datetime="2017-10-01T06:34:00-04:00" itemprop="datePublished">
+           
+           Oct 1, 2017
+        </time>
+       </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+       <h2 id="why">Why?</h2>
+
+<p>I love git. It was a breath of fresh air coming from a heavier Version Control System at a previous job. Git makes coding dare I say, fun? 
+Git is extremely powerful. For people unfamiliar with Git it can seem daunting or confusing, either because they’re coming from another VCS or they’ve never used a VCS at all (Shouldn’t they be teaching <em>something</em> in schools these days?)</p>
+
+<p>Below I’ll outline what I think is one of the simplest workflows you can use on your teams or in your own personal development. The goal is to avoid using some of the more advanced git features which can (when used incorrectly) get developers into trouble.</p>
+
+<p><strong>Assumptions:</strong></p>
+<ul>
+  <li>You have git installed and configured</li>
+  <li>There is a remote repository of some kind you want to work with</li>
+  <li>Your team doesn’t already have a policy in place about doing things like rebasing before merging into master, etc.</li>
+</ul>
+
+<h2 id="optional-setup">Optional Setup</h2>
+<p>If you don’t already have a remote repository setup with write access, you can easily fork an existing repository on github.</p>
+
+<ol>
+  <li>Go to the github page for a project you’d like to contribute to, ex: <a href="https://github.com/github/gitignore">github/gitignore</a></li>
+  <li>In the top right corner click the <code class="highlighter-rouge">fork</code> button. This creates a copy of the repository under your account that you will have full read/write access to.</li>
+  <li>On your own repository page click the <code class="highlighter-rouge">Clone or Download</code> button to get the repository URL for use in the cloning step below.</li>
+</ol>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>Great you’re still here! We’ll first want to pull down a git repository. As an example we’ll use github’s repo with a collection of gitignore files by language type. (If you created a fork in the optional setup replace the git URL below with the URL to your personal repository)</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/zwhitten/gitignore.git
+</code></pre>
+</div>
+
+<p>Which should result in something like this:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git clone https://github.com/zwhitten/gitignore.git
+Cloning into <span class="s1">'gitignore'</span>...
+remote: Counting objects: 6896, <span class="k">done</span>.
+remote: Compressing objects: 100% <span class="o">(</span>14/14<span class="o">)</span>, <span class="k">done</span>.
+remote: Total 6896 <span class="o">(</span>delta 6<span class="o">)</span>, reused 11 <span class="o">(</span>delta 2<span class="o">)</span>, pack-reused 6880
+Receiving objects: 100% <span class="o">(</span>6896/6896<span class="o">)</span>, 1.37 MiB | 1.67 MiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>3686/3686<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+</code></pre>
+</div>
+
+<p>This will create a directory on your local machine called “gitignore”. The rest of the commands will be run from inside this directory so go ahead and go into it</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % <span class="nb">cd </span>gitignore
+</code></pre>
+</div>
+
+<h2 id="working-on-changes-locally">Working on changes locally</h2>
+
+<p>By default git will be on the <code class="highlighter-rouge">master</code> branch when you first open up the project. Once you know the bug or feature you will be working on, you will want to create a feature branch to do this work. Different teams have different conventions for how they like to name their branches. Some like to prefix their feature branches with “feature/” others don’t. For our simple scenario since we won’t actually be pushing our feature branch remotely it won’t matter <em>too</em> much. 
+The gitignore project I checked out contains .gitignore files which can be used in various project types to tell git to ignore specific files or directories. Maybe your team likes to use (but not check in) a series of files ending in “.xyz” in their Java projects and you think the entire github community could benefit from doing the same.</p>
+
+<h3 id="create-a-local-branch">Create a local branch</h3>
+
+<ul>
+  <li>First we’ll create a feature branch for this change called <code class="highlighter-rouge">ignore_xyz</code>:
+    <div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git checkout -b ignore_xyz
+Switched to a new branch <span class="s1">'ignore_xyz'</span>
+</code></pre>
+    </div>
+    <p>OR</p>
+    <div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git branch ignore_xyz
+ % git checkout ignore_xyz
+Switched to branch <span class="s1">'ignore_xyz'</span>
+</code></pre>
+    </div>
+    <p>The first option is a shortcut that does the same thing as the second option: Creates the new branch with the specified name and then switches to it.</p>
+  </li>
+</ul>
+
+<h3 id="make-your-changes">Make your changes</h3>
+
+<ul>
+  <li>Now that we’re on the feature branch we just created we can make our changes to the Java.gitignore file in the directory by adding “*.xyz” to the top of the file. 
+Git allows us to see what changes have been made on our branch by running:</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git status
+On branch ignore_xyz
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git checkout -- &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+
+	modified:   Java.gitignore
+
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+</code></pre>
+</div>
+<p>This is telling us that we’ve modified one file on our branch and even gives us hints about how to revert it or move forward with the change.</p>
+
+<ul>
+  <li>We next add our changed file to the staging area which is git’s way of collecting changes to be put into a commit:</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git add Java.gitignore
+ % git status
+On branch ignore_xyz
+Changes to be committed:
+  <span class="o">(</span>use <span class="s2">"git reset HEAD &lt;file&gt;..."</span> to unstage<span class="o">)</span>
+
+	modified:   Java.gitignore
+</code></pre>
+</div>
+<p>Our change is now staged and ready to be committed to our feature branch.</p>
+
+<ul>
+  <li>Commits require a message to be added. It’s a good idea (and helpful to anyone reviewing your change) to include a useful message that describes what your commit contains:</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git commit -m <span class="s2">"Adding xyz to Java.gitignore file"</span>
+<span class="o">[</span>ignore_xyz 8eafff2] Adding xyz to Java.gitignore file
+ 1 file changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>
+
+ % git status
+On branch ignore_xyz
+nothing to commit, working tree clean
+</code></pre>
+</div>
+<p>Great! We successfully committed our change, but currently it only exists in our local feature branch. We’ll want to merge this into the master branch to share with everyone else.</p>
+
+<h3 id="switch-back-to-master">Switch back to <code class="highlighter-rouge">master</code></h3>
+<ul>
+  <li>We’ll switch back over to the master branch using the <code class="highlighter-rouge">checkout</code> command. After you switch back you’ll notice that your change no longer exists in the file. Don’t worry! It’s still there on your feature branch. If you’re working with a remote repository that other people may have changed since you started working it’s also a good ideal to <code class="highlighter-rouge">pull</code> the latest changes down:
+    <div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git checkout master
+ % git pull origin master
+Already up-to-date.
+</code></pre>
+    </div>
+    <p>At this point your master branch should be up to date with the latest changes in the remote repo (the changes out on github), so we should be safe to merge our changes in.</p>
+  </li>
+</ul>
+
+<h3 id="merge-your-changes-to-master">Merge your changes to <code class="highlighter-rouge">master</code></h3>
+<p>We’ll use the <em>merge</em> comand to merge our feature branch into the <code class="highlighter-rouge">master</code> branch, and assuming all goes well you should see something like:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git merge ignore_xyz
+Updating 7792e50..8eafff2
+Fast-forward
+ Java.gitignore | 1 +
+ 1 file changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>
+</code></pre>
+</div>
+
+<h2 id="pushing-changes-out">Pushing changes out</h2>
+<p>Since you’ll want the world to see your changes, you will now push your local <em>master</em> branch out to the <em>master</em> branch on github. If you forked an existing repository up at the beginning this would be the <em>master</em> branch there on your own personal fork of the project.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git push origin master
+</code></pre>
+</div>
+<p>Since we pulled the latest just before we merged there hopefully shouldn’t be any conflicts or errors. If there are errors git is generally pretty good about telling you what happened. One source of errors could be that someone else pushed a change into the master branch between the time you updated and the time you tried to push your change. Re-pulling <em>master</em> and resolving any conflicts should take care of this.</p>
+
+<h2 id="conflicts">Conflicts?!?!?</h2>
+<p>With multiple developers working in the same code there’s always going to be a possiblity of a conflict. This just means that you and someone else have both edited a file at the same time and git isn’t sure how to include both changes. Back when we switched to our <code class="highlighter-rouge">master</code> branch and pulled down the latest code we might have pulled down another developers changes to the same file we were working in. If this happens, when you try to merge you might see a message similar to:</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git merge ignore_xyz
+Auto-merging Java.gitignore
+CONFLICT <span class="o">(</span>content<span class="o">)</span>: Merge conflict <span class="k">in </span>Java.gitignore
+Automatic merge failed; fix conflicts and <span class="k">then </span>commit the result.
+</code></pre>
+</div>
+<p>Someone else modified Java.gitignore too. If we open up the file now, git has indicated the areas which need our attention:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;</span>&lt; HEAD
+<span class="k">*</span>.abc
+<span class="o">=======</span>
+<span class="k">*</span>.xyz
+<span class="gp">&gt;&gt;&gt;&gt;&gt;&gt;&gt; </span>ignore_xyz
+</code></pre>
+</div>
+<p>The area between the “HEAD” line and the “======” line indicates the changes that we pulled in from the remote repository while the changes below the “=======” line and the “ignore_xyz” line indicate our own changes. In this case, someone added “<em>.abc” at the same location we added “</em>.xyz”. Since we don’t want to mess up their work the solution would be to leave both lines in place. We then remove the “««”, “======”, and “»»” lines to let git know we’ve sorted it out.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git status
+On branch develop
+You have unmerged paths.
+  <span class="o">(</span>fix conflicts and run <span class="s2">"git commit"</span><span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git merge --abort"</span> to abort the merge<span class="o">)</span>
+
+Unmerged paths:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to mark resolution<span class="o">)</span>
+
+	both modified:   Java.gitignore
+
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+</code></pre>
+</div>
+<p>Even though we’ve fixed the conflict we have to let git know by staging the combined file(s) and committing the results.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git add Java.gitignore
+ % git status
+On branch develop
+All conflicts fixed but you are still merging.
+  <span class="o">(</span>use <span class="s2">"git commit"</span> to conclude merge<span class="o">)</span>
+
+Changes to be committed:
+
+	modified:   Java.gitignore
+</code></pre>
+</div>
+<p>And of course we’ll want to provide a useful commit message to indicate that the new commit was the result of a merge:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code> % git commit -m <span class="s2">"Merged Java.gitignore change for .xyz file extensions"</span>
+ % git push origin master
+</code></pre>
+</div>
+
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-2">
+    
+      
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://zdub.io/2017/10/01/the-simplest-git-workflow.html';
+      this.page.identifier = 'https://zdub.io/2017/10/01/the-simplest-git-workflow.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://zdub-io.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+    
+    </div>
+  </div>
+
+      </div>
+
+    <!-- Side bar -->
+    <!-- <div class="sidebar_div">
+    <p>Sidebar</p>
+</div> -->
+    </div>
+
+        <!-- FOOTER  -->
+
+    <footer class="footer">
+      <div class="col-lg-3 col-lg-offset-3">
+        <ul class="contact-list">
+          <li>
+            
+              Codes of Electric Sheep
+            
+            </li>
+            
+                        <li>
+        Published with <a href="https://pages.github.com">GitHub Pages</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/zwhitten"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">zwhitten</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/zwhitten"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">zwhitten</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    
+     <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99634449-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+
+  </body>
+</html>
