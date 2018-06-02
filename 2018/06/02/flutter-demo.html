@@ -97,39 +97,33 @@
     <!-- MAIN CONTENT -->
           <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <h1 class="" itemprop="name headline">Home-Assistant First Impressions</h1>
+        <h1 class="" itemprop="name headline">Creating a Flutter Demo App</h1>
         <p class="text-muted">
-        <time datetime="2017-11-12T16:48:00-05:00" itemprop="datePublished">
+        <time datetime="2018-06-02T15:15:00-04:00" itemprop="datePublished">
            
-           Nov 12, 2017
+           Jun 2, 2018
         </time>
        </p>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-       <p>I had a spare Raspberry Pi 2 laying around, so I decided to give <a href="https://home-assistant.io/">home-assistant</a> a spin. Overall Home Assistant is very impressive. There are connectors for just about every type of “Smart Home” device you coul possibly want to connect. It has auto-discovery for certain types of devices, but most others require configuration changes to enable.</p>
+       <p>I’ve been experimenting lately with <a href="https://flutter.io">Flutter</a> for building cross platform mobile applications, and I have to say so far I’m pretty impressed.</p>
 
-<h3 id="installation">Installation</h3>
-<p>On my pi 2 the installation was actually a little bit painful (time-wise). They do have a script available that does all of the heavy lifting like creating a separate user account to run home-assistant as, installing the necessary OS dependencies, pulling down the python packages needed, etc. The painful part was likely due to the low power nature of the pi 2, but it took over 4 hours for this process to complete for me. There were many points during the installation where I wasn’t sure if it had locked up or if it was still going because there was no progress indication.</p>
+<p>I had previously looked into React Native and Nativescript options. Both were/are great especially if you’re already a JavaScript developer (or want to be one). React Native is obviously more suited for developers who already have some familiarity with React. Nativescript likewise offers a pretty seamless transition for people already familiar with Angular. The most impressie thing about Nativescript to me was Expo which allows for loading your code onto an actual device without connecting to the computer.</p>
 
-<h3 id="hope-you-like-yaml">Hope you like YAML</h3>
-<p>Most of the configuration Home Assistant supports has to be done through YAML configuration files. I have not gotten too deep into this yet besides enabling Z-Wave and getting a USB Z-Wave receiver and motion sensor connected.</p>
+<p>### Enter Flutter…</p>
 
-<p>They’re connected but not doing much yet. I didn’t find much documentation about how to configure things, but there are links to quite a few Github projects where people have provided example configurations.</p>
+<p>Flutter offers pretty much all of the same advantages of it’s javascript counterparts. Namely, true write once and run anywhere code. One big difference however is that Flutter doesn’t interact directly with native components. Flutter animates and draws all of it’s components separately which means that there is no JavaScript to native bridge required within the applications.</p>
 
-<p>I was also able to connect to the Weather Underground API to pull local weather information for my area. I haven’t yet gotten this data grouped into a useful UI component though.</p>
+<p>Flutter comes with dozens of components out of the box. It’s hotreload functionality allows for near instantaneous testing and debugging in the local simulators. Flutter uses the Dart programming language which could be a turn off to some, but I actually found it pretty easy to pick up. There were only a couple of instances where I had to consult the documentation to check the syntax.</p>
 
-<p>I’m still going through the example files learning what’s possible and how to make it happen.</p>
+<p>As a test of the framework I created a simple “todo” list style application to track books that I have in my stack to be read. The application has multiple tab views with Lists of items which can be reordered, completed and/or deleted. It’s also backed by sqlite using a dart library. In a future post I’ll try to dive into the actual implementation of the test application.</p>
 
-<h3 id="still-todo">Still TODO</h3>
-<p>I’m planning to configure more complicated triggers and events based on the few Z-Wave devices I have. I’ll post again later to update on my progess so stay tuned!</p>
+<p>All in all the process was super easy, and I had a fully functional “production” ready application in a fraction of the time it would have taken to implement in pretty much any of the other frameworks I have tried.</p>
 
-<p>I’d also like to delve into what configurations are available for grouping sensors and devices on the home screen.</p>
-
-<p>There are also a number of plugins people have written I’d like to check out. One specifically was a floorplan addon that lets you visualize your house and where various sensors/devices are. <a href="https://github.com/pkozul/ha-floorplan">ha-floorplan</a></p>
-
-<p>There are also instructions for setting up Home Assistant as a <a href="https://home-assistant.io/docs/ecosystem/tor/">hidden Tor service</a> which seems pretty awesome as well.</p>
+<p>Feel free to check out the results on github: 
+<a href="https://github.com/zwhitten/media_queue">Media Queue - Flutter Application</a></p>
 
       </div>
     </div>
@@ -141,8 +135,8 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'https://zdub.io/2017/11/12/home-assistant-first-impressions.html';
-      this.page.identifier = 'https://zdub.io/2017/11/12/home-assistant-first-impressions.html';
+      this.page.url = 'https://zdub.io/2018/06/02/flutter-demo.html';
+      this.page.identifier = 'https://zdub.io/2018/06/02/flutter-demo.html';
     };
 
     (function() {
