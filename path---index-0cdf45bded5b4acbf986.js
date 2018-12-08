@@ -1,2 +1,2 @@
-webpackJsonp([0x81b8806e4260],{504:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Codes of Electric Sheep"}}},pathContext:{}}}});
+webpackJsonp([0x81b8806e4260],{505:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Codes of Electric Sheep"}}},pathContext:{}}}});
 //# sourceMappingURL=path---index-0cdf45bded5b4acbf986.js.map
