@@ -1,29 +1,188 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Codes of Electric Sheep]]></title><description><![CDATA[Personal Blog of @zwhitten]]></description><link>https://zdub.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Dec 2018 01:30:20 GMT</lastBuildDate><item><title><![CDATA[Migrating from Jekyll to Gatsby]]></title><description><![CDATA[I decided to migrate this site from  Jekyll  to  Gatsby . I didn’t have a compelling technical reason for doing so, but since I was looking…]]></description><link>https://zdub.io/transition-to-gatsbyjs/</link><guid isPermaLink="false">https://zdub.io/transition-to-gatsbyjs/</guid><content:encoded>&lt;p&gt;I decided to migrate this site from &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt;. I didn’t have a compelling technical reason for doing so, but since I was looking to upgrade the asthetic anyway I figured I’d give Gatsby a shot.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Zach Whitten]]></title><description><![CDATA[Personal Blog of @zwhitten]]></description><link>https://zdub.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Dec 2019 19:38:43 GMT</lastBuildDate><item><title><![CDATA[Migrating from Jekyll to Gatsby]]></title><link>https://zdub.io/posts/transition-to-gatsby</link><guid isPermaLink="false">https://zdub.io/posts/transition-to-gatsby</guid><pubDate>Sat, 08 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 864px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/69b63e5ad554c3a066e81fa07f5003c5/69bf2/dominic-dreier-340662-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.28703703703704%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAAB0kLjzbBEJ//EABoQAAMAAwEAAAAAAAAAAAAAAAABAgQRExL/2gAIAQEAAQUC7InIdV1JsS1k+j//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEn/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQIBAT8BpT//xAAaEAACAgMAAAAAAAAAAAAAAAAAARESIDEy/9oACAEBAAY/AtMipy8P/8QAGhAAAwEAAwAAAAAAAAAAAAAAAAERITFRYf/aAAgBAQABPyFMqVEShc9IBk0sO9sb3g//2gAMAwEAAgADAAAAEM/f/8QAFhEAAwAAAAAAAAAAAAAAAAAAEBFB/9oACAEDAQE/EEo//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EBNu/8QAHBABAAMAAgMAAAAAAAAAAAAAAQARITFxYYHh/9oACAEBAAE/EMM0NJFDLpqoHfyJVdvqIuN8RD8LT2XOME//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/69b63e5ad554c3a066e81fa07f5003c5/01472/dominic-dreier-340662-unsplash.webp 240w,
+/static/69b63e5ad554c3a066e81fa07f5003c5/222bd/dominic-dreier-340662-unsplash.webp 480w,
+/static/69b63e5ad554c3a066e81fa07f5003c5/177e8/dominic-dreier-340662-unsplash.webp 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/69b63e5ad554c3a066e81fa07f5003c5/3bc27/dominic-dreier-340662-unsplash.jpg 240w,
+/static/69b63e5ad554c3a066e81fa07f5003c5/98431/dominic-dreier-340662-unsplash.jpg 480w,
+/static/69b63e5ad554c3a066e81fa07f5003c5/69bf2/dominic-dreier-340662-unsplash.jpg 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/69b63e5ad554c3a066e81fa07f5003c5/69bf2/dominic-dreier-340662-unsplash.jpg&quot;
+          alt=&quot;random image&quot;
+          title=&quot;random image&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I decided to migrate this site from &lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Jekyll&lt;/a&gt; to &lt;a href=&quot;https://www.gatsbyjs.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Gatsby&lt;/a&gt;. I didn’t have a compelling technical reason for doing so, but since I was looking to upgrade the asthetic anyway I figured I’d give Gatsby a shot.
 I don’t use Ruby too often these days, but do a fair amount of work in React and Redux so it does seem like Gatsby will prove to be a little easier to extend and modify. &lt;/p&gt;
 &lt;p&gt;Since the handful of posts I had were markdown already the migration was extremely easy. I pulled down a Gatsby blog template site (which already had the markdown rendering package included), and basically put my posts into the “gatsby” content directory structure. &lt;/p&gt;
 &lt;p&gt;I was able to strip down the template I chose by removing dependencies for things like Facebook, Algolia, and netlify. Nothing against those sites (well maybe &lt;em&gt;something&lt;/em&gt; against FB) but I wasn’t interested in using them right now. It was also very easy to add &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; plugins for disqus and google analytics which was nice. &lt;/p&gt;
-&lt;p&gt;I’ll probably continue playing around with Gatsby and seeing what other plugins and packages the community has out there. Stay tuned!&lt;/p&gt;
-&lt;p&gt;Thumbnail Photo by &lt;a href=&quot;https://unsplash.com/photos/JGYU58CbT-g?utm_source=unsplash&amp;#x26;utm_medium=referral&amp;#x26;utm_content=creditCopyText&quot;&gt;Dominic Dreier&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Creating a Flutter Demo App]]></title><description><![CDATA[I’ve been experimenting lately with  Flutter  for building cross platform mobile applications, and I have to say so far I’m pretty impressed…]]></description><link>https://zdub.io/flutter-demo/</link><guid isPermaLink="false">https://zdub.io/flutter-demo/</guid><content:encoded>&lt;p&gt;I’ve been experimenting lately with &lt;a href=&quot;https://flutter.io&quot;&gt;Flutter&lt;/a&gt; for building cross platform mobile applications, and I have to say so far I’m pretty impressed.&lt;/p&gt;
+&lt;p&gt;I’ll probably continue playing around with Gatsby and seeing what other plugins and packages the community has out there. Stay tuned!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Creating a Flutter Demo App]]></title><link>https://zdub.io/posts/flutter-demo</link><guid isPermaLink="false">https://zdub.io/posts/flutter-demo</guid><pubDate>Fri, 01 Jun 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 864px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/73c48cab1669010150b6aba45a98837e/69bf2/paul-gilmore-708419-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEA//EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHWaidhCE//xAAaEAACAwEBAAAAAAAAAAAAAAACAwABExES/9oACAEBAAEFAha0h3ZZE13dLnu6mxT/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAgEFAAAAAAAAAAAAAAAAAAEREiAxM2H/2gAIAQEABj8C1pkUJ8gwlZ//xAAcEAEBAAEFAQAAAAAAAAAAAAABABEhMUFhcZH/2gAIAQEAAT8hGPyb2kGSLDx4kzySCct23//aAAwDAQACAAMAAAAQC9//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQMBAT8QylP/xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAECAQE/EJxT/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARITFBkWH/2gAIAQEAAT8QNoKxueIX87nIfIjTQ62vZobToNSwsWtXfYAZH//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/73c48cab1669010150b6aba45a98837e/01472/paul-gilmore-708419-unsplash.webp 240w,
+/static/73c48cab1669010150b6aba45a98837e/222bd/paul-gilmore-708419-unsplash.webp 480w,
+/static/73c48cab1669010150b6aba45a98837e/177e8/paul-gilmore-708419-unsplash.webp 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/73c48cab1669010150b6aba45a98837e/3bc27/paul-gilmore-708419-unsplash.jpg 240w,
+/static/73c48cab1669010150b6aba45a98837e/98431/paul-gilmore-708419-unsplash.jpg 480w,
+/static/73c48cab1669010150b6aba45a98837e/69bf2/paul-gilmore-708419-unsplash.jpg 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/73c48cab1669010150b6aba45a98837e/69bf2/paul-gilmore-708419-unsplash.jpg&quot;
+          alt=&quot;random image&quot;
+          title=&quot;random image&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I’ve been experimenting lately with &lt;a href=&quot;https://flutter.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Flutter&lt;/a&gt; for building cross platform mobile applications, and I have to say so far I’m pretty impressed.&lt;/p&gt;
 &lt;p&gt; I had previously looked into React Native and Nativescript options. Both were/are great especially if you’re already a JavaScript developer (or want to be one). React Native is obviously more suited for developers who already have some familiarity with React. Nativescript likewise offers a pretty seamless transition for people already familiar with Angular. The most impressie thing about Nativescript to me was Expo which allows for loading your code onto an actual device without connecting to the computer. &lt;/p&gt;
-&lt;h3&gt;Enter Flutter…&lt;/h3&gt;
+&lt;h3 id=&quot;enter-flutter&quot;&gt;&lt;a href=&quot;#enter-flutter&quot; aria-label=&quot;enter flutter permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Enter Flutter…&lt;/h3&gt;
 &lt;p&gt;Flutter offers pretty much all of the same advantages of it’s javascript counterparts. Namely, true write once and run anywhere code. One big difference however is that Flutter doesn’t interact directly with native components. Flutter animates and draws all of it’s components separately which means that there is no JavaScript to native bridge required within the applications. &lt;/p&gt;
 &lt;p&gt;Flutter comes with dozens of components out of the box. It’s hotreload functionality allows for near instantaneous testing and debugging in the local simulators. Flutter uses the Dart programming language which could be a turn off to some, but I actually found it pretty easy to pick up. There were only a couple of instances where I had to consult the documentation to check the syntax. &lt;/p&gt;
 &lt;p&gt;As a test of the framework I created a simple “todo” list style application to track books that I have in my stack to be read. The application has multiple tab views with Lists of items which can be reordered, completed and/or deleted. It’s also backed by sqlite using a dart library. In a future post I’ll try to dive into the actual implementation of the test application.&lt;/p&gt;
 &lt;p&gt;All in all the process was super easy, and I had a fully functional “production” ready application in a fraction of the time it would have taken to implement in pretty much any of the other frameworks I have tried. &lt;/p&gt;
 &lt;p&gt;Feel free to check out the results on github:
-&lt;a href=&quot;https://github.com/zwhitten/media_queue&quot;&gt;Media Queue - Flutter Application&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Home-Assistant First Impressions]]></title><description><![CDATA[I had a spare Raspberry Pi 2 laying around, so I decided to give  home-assistant  a spin. Overall Home Assistant is very impressive. There…]]></description><link>https://zdub.io/home-assistant-first-impressions/</link><guid isPermaLink="false">https://zdub.io/home-assistant-first-impressions/</guid><content:encoded>&lt;p&gt;I had a spare Raspberry Pi 2 laying around, so I decided to give &lt;a href=&quot;https://home-assistant.io/&quot;&gt;home-assistant&lt;/a&gt; a spin. Overall Home Assistant is very impressive. There are connectors for just about every type of “Smart Home” device you coul possibly want to connect. It has auto-discovery for certain types of devices, but most others require configuration changes to enable. &lt;/p&gt;
-&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;a href=&quot;https://github.com/zwhitten/media_queue&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Media Queue - Flutter Application&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Home-Assistant First Impressions]]></title><link>https://zdub.io/posts/home-assistant-first-impressions</link><guid isPermaLink="false">https://zdub.io/posts/home-assistant-first-impressions</guid><pubDate>Sun, 12 Nov 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 864px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b38100ef604873ca61c063a8999243da/69bf2/joao-marcelo-marques-791496-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.13425925925925%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/2gAMAwEAAhADEAAAAdsklpo2Fpqf/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAIQEhMh/9oACAEBAAEFAtkNULrC8j//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8BjH//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAcEAADAAEFAAAAAAAAAAAAAAAAAREhEDFBUXH/2gAIAQEAAT8hXBWJ+Fv5pV06sUrP/9oADAMBAAIAAwAAABAU3//EABgRAQEAAwAAAAAAAAAAAAAAAAEAITFR/9oACAEDAQE/EEDRY5f/xAAYEQACAwAAAAAAAAAAAAAAAAAAARFBcf/aAAgBAgEBPxCTs0f/xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhQTFRkf/aAAgBAQABPxDCBPQbKVVWJxGzvyNBvfFzC9hbXZcts//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/b38100ef604873ca61c063a8999243da/01472/joao-marcelo-marques-791496-unsplash.webp 240w,
+/static/b38100ef604873ca61c063a8999243da/222bd/joao-marcelo-marques-791496-unsplash.webp 480w,
+/static/b38100ef604873ca61c063a8999243da/177e8/joao-marcelo-marques-791496-unsplash.webp 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/b38100ef604873ca61c063a8999243da/3bc27/joao-marcelo-marques-791496-unsplash.jpg 240w,
+/static/b38100ef604873ca61c063a8999243da/98431/joao-marcelo-marques-791496-unsplash.jpg 480w,
+/static/b38100ef604873ca61c063a8999243da/69bf2/joao-marcelo-marques-791496-unsplash.jpg 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/b38100ef604873ca61c063a8999243da/69bf2/joao-marcelo-marques-791496-unsplash.jpg&quot;
+          alt=&quot;random image&quot;
+          title=&quot;random image&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I had a spare Raspberry Pi 2 laying around, so I decided to give &lt;a href=&quot;https://home-assistant.io/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;home-assistant&lt;/a&gt; a spin. Overall Home Assistant is very impressive. There are connectors for just about every type of “Smart Home” device you coul possibly want to connect. It has auto-discovery for certain types of devices, but most others require configuration changes to enable. &lt;/p&gt;
+&lt;h3 id=&quot;installation&quot;&gt;&lt;a href=&quot;#installation&quot; aria-label=&quot;installation permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
 &lt;p&gt;On my pi 2 the installation was actually a little bit painful (time-wise). They do have a script available that does all of the heavy lifting like creating a separate user account to run home-assistant as, installing the necessary OS dependencies, pulling down the python packages needed, etc. The painful part was likely due to the low power nature of the pi 2, but it took over 4 hours for this process to complete for me. There were many points during the installation where I wasn’t sure if it had locked up or if it was still going because there was no progress indication. &lt;/p&gt;
-&lt;h3&gt;Hope you like YAML&lt;/h3&gt;
+&lt;h3 id=&quot;hope-you-like-yaml&quot;&gt;&lt;a href=&quot;#hope-you-like-yaml&quot; aria-label=&quot;hope you like yaml permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hope you like YAML&lt;/h3&gt;
 &lt;p&gt;Most of the configuration Home Assistant supports has to be done through YAML configuration files. I have not gotten too deep into this yet besides enabling Z-Wave and getting a USB Z-Wave receiver and motion sensor connected. &lt;/p&gt;
 &lt;p&gt;They’re connected but not doing much yet. I didn’t find much documentation about how to configure things, but there are links to quite a few Github projects where people have provided example configurations. &lt;/p&gt;
 &lt;p&gt;I was also able to connect to the Weather Underground API to pull local weather information for my area. I haven’t yet gotten this data grouped into a useful UI component though. &lt;/p&gt;
 &lt;p&gt;I’m still going through the example files learning what’s possible and how to make it happen. &lt;/p&gt;
-&lt;h3&gt;Still TODO&lt;/h3&gt;
+&lt;h3 id=&quot;still-todo&quot;&gt;&lt;a href=&quot;#still-todo&quot; aria-label=&quot;still todo permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Still TODO&lt;/h3&gt;
 &lt;p&gt;I’m planning to configure more complicated triggers and events based on the few Z-Wave devices I have. I’ll post again later to update on my progess so stay tuned!&lt;/p&gt;
 &lt;p&gt;I’d also like to delve into what configurations are available for grouping sensors and devices on the home screen. &lt;/p&gt;
-&lt;p&gt;There are also a number of plugins people have written I’d like to check out. One specifically was a floorplan addon that lets you visualize your house and where various sensors/devices are. &lt;a href=&quot;https://github.com/pkozul/ha-floorplan&quot;&gt;ha-floorplan&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;There are also instructions for setting up Home Assistant as a &lt;a href=&quot;https://home-assistant.io/docs/ecosystem/tor/&quot;&gt;hidden Tor service&lt;/a&gt; which seems pretty awesome as well. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Simplest Git Workflow]]></title><description><![CDATA[Why? I love git. It was a breath of fresh air coming from a heavier Version Control System at a previous job. Git makes coding dare I say…]]></description><link>https://zdub.io/the-simplest-git-workflow/</link><guid isPermaLink="false">https://zdub.io/the-simplest-git-workflow/</guid><content:encoded>&lt;h2&gt;Why?&lt;/h2&gt;
+&lt;p&gt;There are also a number of plugins people have written I’d like to check out. One specifically was a floorplan addon that lets you visualize your house and where various sensors/devices are. &lt;a href=&quot;https://github.com/pkozul/ha-floorplan&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;ha-floorplan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There are also instructions for setting up Home Assistant as a &lt;a href=&quot;https://home-assistant.io/docs/ecosystem/tor/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;hidden Tor service&lt;/a&gt; which seems pretty awesome as well. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Simplest Git Workflow]]></title><description><![CDATA[A step by step walk through of how to use git and with a straight forward workflow]]></description><link>https://zdub.io/posts/the-simplest-git-workflow</link><guid isPermaLink="false">https://zdub.io/posts/the-simplest-git-workflow</guid><pubDate>Sun, 01 Oct 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 864px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6d78eab0e19fb2b26796cabfaf9f2735/69bf2/giuseppe-mondi-801289-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAWPQgwKlJsWf/8QAGxAAAgMAAwAAAAAAAAAAAAAAAQIAAxEQExT/2gAIAQEAAQUC9NcDBuAurpA77J//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQIBAT8B0r//xAAZEAACAwEAAAAAAAAAAAAAAAAAEQIgITH/2gAIAQEABj8C6N0ySP/EABwQAAICAgMAAAAAAAAAAAAAAAABETEhgVFhcf/aAAgBAQABPyHFZ6F0NBvoQi14yJh0yK5OD//aAAwDAQACAAMAAAAQmP8A/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QV//EABYRAAMAAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxAUn//EABoQAQADAQEBAAAAAAAAAAAAAAEAESFBMWH/2gAIAQEAAT8QpFavBwHneGK6J+xctqxoqAnI6u11qUw4n12f/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/6d78eab0e19fb2b26796cabfaf9f2735/01472/giuseppe-mondi-801289-unsplash.webp 240w,
+/static/6d78eab0e19fb2b26796cabfaf9f2735/222bd/giuseppe-mondi-801289-unsplash.webp 480w,
+/static/6d78eab0e19fb2b26796cabfaf9f2735/177e8/giuseppe-mondi-801289-unsplash.webp 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/6d78eab0e19fb2b26796cabfaf9f2735/3bc27/giuseppe-mondi-801289-unsplash.jpg 240w,
+/static/6d78eab0e19fb2b26796cabfaf9f2735/98431/giuseppe-mondi-801289-unsplash.jpg 480w,
+/static/6d78eab0e19fb2b26796cabfaf9f2735/69bf2/giuseppe-mondi-801289-unsplash.jpg 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/6d78eab0e19fb2b26796cabfaf9f2735/69bf2/giuseppe-mondi-801289-unsplash.jpg&quot;
+          alt=&quot;Random Image&quot;
+          title=&quot;Random Image&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;why&quot;&gt;&lt;a href=&quot;#why&quot; aria-label=&quot;why permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why?&lt;/h2&gt;
 &lt;p&gt;I love git. It was a breath of fresh air coming from a heavier Version Control System at a previous job. Git makes coding dare I say, fun?
 Git is extremely powerful. For people unfamiliar with Git it can seem daunting or confusing, either because they’re coming from another VCS or they’ve never used a VCS at all (Shouldn’t they be teaching &lt;em&gt;something&lt;/em&gt; in schools these days?)&lt;/p&gt;
 &lt;p&gt;Below I’ll outline what I think is one of the simplest workflows you can use on your teams or in your own personal development. The goal is to avoid using some of the more advanced git features which can (when used incorrectly) get developers into trouble. &lt;/p&gt;
@@ -33,171 +192,219 @@ Git is extremely powerful. For people unfamiliar with Git it can seem daunting o
 &lt;li&gt;There is a remote repository of some kind you want to work with&lt;/li&gt;
 &lt;li&gt;Your team doesn’t already have a policy in place about doing things like rebasing before merging into master, etc.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Optional Setup&lt;/h2&gt;
+&lt;h2 id=&quot;optional-setup&quot;&gt;&lt;a href=&quot;#optional-setup&quot; aria-label=&quot;optional setup permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Optional Setup&lt;/h2&gt;
 &lt;p&gt;If you don’t already have a remote repository setup with write access, you can easily fork an existing repository on github. &lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the github page for a project you’d like to contribute to, ex: &lt;a href=&quot;https://github.com/github/gitignore&quot;&gt;github/gitignore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go to the github page for a project you’d like to contribute to, ex: &lt;a href=&quot;https://github.com/github/gitignore&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github/gitignore&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;In the top right corner click the &lt;code class=&quot;language-text&quot;&gt;fork&lt;/code&gt; button. This creates a copy of the repository under your account that you will have full read/write access to. &lt;/li&gt;
 &lt;li&gt;On your own repository page click the &lt;code class=&quot;language-text&quot;&gt;Clone or Download&lt;/code&gt; button to get the repository URL for use in the cloning step below.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Getting Started&lt;/h2&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;&lt;a href=&quot;#getting-started&quot; aria-label=&quot;getting started permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
 &lt;p&gt;Great you’re still here! We’ll first want to pull down a git repository. As an example we’ll use github’s repo with a collection of gitignore files by language type. (If you created a fork in the optional setup replace the git URL below with the URL to your personal repository)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone https://github.com/zwhitten/gitignore.git&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone https://github.com/zwhitten/gitignore.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Which should result in something like this:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git clone https://github.com/zwhitten/gitignore.git
-Cloning into &amp;#39;gitignore&amp;#39;...
-remote: Counting objects: 6896, done.
-remote: Compressing objects: 100% (14/14), done.
-remote: Total 6896 (delta 6), reused 11 (delta 2), pack-reused 6880
-Receiving objects: 100% (6896/6896), 1.37 MiB | 1.67 MiB/s, done.
-Resolving deltas: 100% (3686/3686), done.
-Checking connectivity... done.&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone https://github.com/zwhitten/gitignore.git
+Cloning into &lt;span class=&quot;token string&quot;&gt;&apos;gitignore&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+remote: Counting objects: &lt;span class=&quot;token number&quot;&gt;6896&lt;/span&gt;, done.
+remote: Compressing objects: &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;% &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;14&lt;/span&gt;/14&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, done.
+remote: Total &lt;span class=&quot;token number&quot;&gt;6896&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;delta &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, reused &lt;span class=&quot;token number&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;delta &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, pack-reused &lt;span class=&quot;token number&quot;&gt;6880&lt;/span&gt;
+Receiving objects: &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;% &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6896&lt;/span&gt;/6896&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;token number&quot;&gt;1.37&lt;/span&gt; MiB &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1.67&lt;/span&gt; MiB/s, done.
+Resolving deltas: &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;% &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3686&lt;/span&gt;/3686&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, done.
+Checking connectivity&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;. done.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This will create a directory on your local machine called “gitignore”. The rest of the commands will be run from inside this directory so go ahead and go into it&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % cd gitignore&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;Working on changes locally&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; gitignore&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;working-on-changes-locally&quot;&gt;&lt;a href=&quot;#working-on-changes-locally&quot; aria-label=&quot;working on changes locally permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Working on changes locally&lt;/h2&gt;
 &lt;p&gt;By default git will be on the &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; branch when you first open up the project. Once you know the bug or feature you will be working on, you will want to create a feature branch to do this work. Different teams have different conventions for how they like to name their branches. Some like to prefix their feature branches with “feature/” others don’t. For our simple scenario since we won’t actually be pushing our feature branch remotely it won’t matter &lt;em&gt;too&lt;/em&gt; much.
 The gitignore project I checked out contains .gitignore files which can be used in various project types to tell git to ignore specific files or directories. Maybe your team likes to use (but not check in) a series of files ending in “.xyz” in their Java projects and you think the entire github community could benefit from doing the same.&lt;/p&gt;
-&lt;h3&gt;Create a local branch&lt;/h3&gt;
+&lt;h3 id=&quot;create-a-local-branch&quot;&gt;&lt;a href=&quot;#create-a-local-branch&quot; aria-label=&quot;create a local branch permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a local branch&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;First we’ll create a feature branch for this change called &lt;code class=&quot;language-text&quot;&gt;ignore_xyz&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;% git checkout -b ignore_xyz
-Switched to a new branch &amp;#39;ignore_xyz&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;% &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout -b ignore_xyz
+Switched to a new branch &lt;span class=&quot;token string&quot;&gt;&apos;ignore_xyz&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;OR &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;% git branch ignore_xyz
-% git checkout ignore_xyz
-Switched to branch &amp;#39;ignore_xyz&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;% &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch ignore_xyz
+% &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout ignore_xyz
+Switched to branch &lt;span class=&quot;token string&quot;&gt;&apos;ignore_xyz&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The first option is a shortcut that does the same thing as the second option: Creates the new branch with the specified name and then switches to it. &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Make your changes&lt;/h3&gt;
+&lt;h3 id=&quot;make-your-changes&quot;&gt;&lt;a href=&quot;#make-your-changes&quot; aria-label=&quot;make your changes permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Make your changes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Now that we’re on the feature branch we just created we can make our changes to the Java.gitignore file in the directory by adding “*.xyz” to the top of the file.
 Git allows us to see what changes have been made on our branch by running:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git status
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; status
 On branch ignore_xyz
-Changes not staged for commit:
-  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed)
-  (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory)
+Changes not staged &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; commit:
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git add &amp;lt;file&gt;...&quot;&lt;/span&gt; to update what will be committed&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git checkout -- &amp;lt;file&gt;...&quot;&lt;/span&gt; to discard changes &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; working directory&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 	modified:   Java.gitignore
 
-no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+no changes added to commit &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git add&quot;&lt;/span&gt; and/or &lt;span class=&quot;token string&quot;&gt;&quot;git commit -a&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This is telling us that we’ve modified one file on our branch and even gives us hints about how to revert it or move forward with the change. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We next add our changed file to the staging area which is git’s way of collecting changes to be put into a commit:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git add Java.gitignore
- % git status
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; Java.gitignore
+ % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; status
 On branch ignore_xyz
 Changes to be committed:
-  (use &amp;quot;git reset HEAD &amp;lt;file&amp;gt;...&amp;quot; to unstage)
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git reset HEAD &amp;lt;file&gt;...&quot;&lt;/span&gt; to unstage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-	modified:   Java.gitignore&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+	modified:   Java.gitignore&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Our change is now staged and ready to be committed to our feature branch.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Commits require a message to be added. It’s a good idea (and helpful to anyone reviewing your change) to include a useful message that describes what your commit contains:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git commit -m &amp;quot;Adding xyz to Java.gitignore file&amp;quot;
-[ignore_xyz 8eafff2] Adding xyz to Java.gitignore file
- 1 file changed, 1 insertion(+)
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit -m &lt;span class=&quot;token string&quot;&gt;&quot;Adding xyz to Java.gitignore file&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;ignore_xyz 8eafff2&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; Adding xyz to Java.gitignore &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;
+ &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; changed, &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; insertion&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
- % git status
+ % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; status
 On branch ignore_xyz
-nothing to commit, working tree clean&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+nothing to commit, working tree clean&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Great! We successfully committed our change, but currently it only exists in our local feature branch. We’ll want to merge this into the master branch to share with everyone else. &lt;/p&gt;
-&lt;h3&gt;Switch back to &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;switch-back-to-master&quot;&gt;&lt;a href=&quot;#switch-back-to-master&quot; aria-label=&quot;switch back to master permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Switch back to &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;We’ll switch back over to the master branch using the &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt; command. After you switch back you’ll notice that your change no longer exists in the file. Don’t worry! It’s still there on your feature branch. If you’re working with a remote repository that other people may have changed since you started working it’s also a good ideal to &lt;code class=&quot;language-text&quot;&gt;pull&lt;/code&gt; the latest changes down:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;% git checkout master
-% git pull origin master
-Already up-to-date.&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;% &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout master
+% &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; pull origin master
+Already up-to-date.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;At this point your master branch should be up to date with the latest changes in the remote repo (the changes out on github), so we should be safe to merge our changes in. &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Merge your changes to &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;merge-your-changes-to-master&quot;&gt;&lt;a href=&quot;#merge-your-changes-to-master&quot; aria-label=&quot;merge your changes to master permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Merge your changes to &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;We’ll use the &lt;em&gt;merge&lt;/em&gt; comand to merge our feature branch into the &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; branch, and assuming all goes well you should see something like: &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git merge ignore_xyz
-Updating 7792e50..8eafff2
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; merge ignore_xyz
+Updating 7792e50&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;8eafff2
 Fast-forward
- Java.gitignore | 1 +
- 1 file changed, 1 insertion(+)&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;Pushing changes out&lt;/h2&gt;
+ Java.gitignore &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; +
+ &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; changed, &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; insertion&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;pushing-changes-out&quot;&gt;&lt;a href=&quot;#pushing-changes-out&quot; aria-label=&quot;pushing changes out permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pushing changes out&lt;/h2&gt;
 &lt;p&gt;Since you’ll want the world to see your changes, you will now push your local &lt;em&gt;master&lt;/em&gt; branch out to the &lt;em&gt;master&lt;/em&gt; branch on github. If you forked an existing repository up at the beginning this would be the &lt;em&gt;master&lt;/em&gt; branch there on your own personal fork of the project.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git push origin master&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Since we pulled the latest just before we merged there hopefully shouldn’t be any conflicts or errors. If there are errors git is generally pretty good about telling you what happened. One source of errors could be that someone else pushed a change into the master branch between the time you updated and the time you tried to push your change. Re-pulling &lt;em&gt;master&lt;/em&gt; and resolving any conflicts should take care of this. &lt;/p&gt;
-&lt;h2&gt;Conflicts?!?!?&lt;/h2&gt;
+&lt;h2 id=&quot;conflicts&quot;&gt;&lt;a href=&quot;#conflicts&quot; aria-label=&quot;conflicts permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conflicts?!?!?&lt;/h2&gt;
 &lt;p&gt;With multiple developers working in the same code there’s always going to be a possiblity of a conflict. This just means that you and someone else have both edited a file at the same time and git isn’t sure how to include both changes. Back when we switched to our &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; branch and pulled down the latest code we might have pulled down another developers changes to the same file we were working in. If this happens, when you try to merge you might see a message similar to:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git merge ignore_xyz
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; merge ignore_xyz
 Auto-merging Java.gitignore
-CONFLICT (content): Merge conflict in Java.gitignore
-Automatic merge failed; fix conflicts and then commit the result.&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+CONFLICT &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;content&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;: Merge conflict &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; Java.gitignore
+Automatic merge failed&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; fix conflicts and &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; commit the result.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Someone else modified Java.gitignore too. If we open up the file now, git has indicated the areas which need our attention:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; HEAD
 *.abc
-=======
+&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
 *.xyz
-&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; ignore_xyz&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; ignore_xyz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The area between the “HEAD” line and the ”======” line indicates the changes that we pulled in from the remote repository while the changes below the ”=======” line and the “ignore_xyz” line indicate our own changes. In this case, someone added ”&lt;em&gt;.abc” at the same location we added ”&lt;/em&gt;.xyz”. Since we don’t want to mess up their work the solution would be to leave both lines in place. We then remove the ”&amp;#x3C;&amp;#x3C;&amp;#x3C;&amp;#x3C;”, ”======”, and ”&gt;&gt;&gt;&gt;” lines to let git know we’ve sorted it out. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git status
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; status
 On branch develop
 You have unmerged paths.
-  (fix conflicts and run &amp;quot;git commit&amp;quot;)
-  (use &amp;quot;git merge --abort&amp;quot; to abort the merge)
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fix conflicts and run &lt;span class=&quot;token string&quot;&gt;&quot;git commit&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git merge --abort&quot;&lt;/span&gt; to abort the merge&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 Unmerged paths:
-  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to mark resolution)
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git add &amp;lt;file&gt;...&quot;&lt;/span&gt; to mark resolution&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 	both modified:   Java.gitignore
 
-no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+no changes added to commit &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git add&quot;&lt;/span&gt; and/or &lt;span class=&quot;token string&quot;&gt;&quot;git commit -a&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Even though we’ve fixed the conflict we have to let git know by staging the combined file(s) and committing the results. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git add Java.gitignore
- % git status
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; Java.gitignore
+ % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; status
 On branch develop
 All conflicts fixed but you are still merging.
-  (use &amp;quot;git commit&amp;quot; to conclude merge)
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git commit&quot;&lt;/span&gt; to conclude merge&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 Changes to be committed:
 
-	modified:   Java.gitignore&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+	modified:   Java.gitignore&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And of course we’ll want to provide a useful commit message to indicate that the new commit was the result of a merge:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % git commit -m &amp;quot;Merged Java.gitignore change for .xyz file extensions&amp;quot;
- % git push origin master&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Site Theme Switch]]></title><description><![CDATA[Just a quick note to anyone who stumbles across the git history of this site. When I first started this blog I used the  slate  theme since…]]></description><link>https://zdub.io/site-theme-switch/</link><guid isPermaLink="false">https://zdub.io/site-theme-switch/</guid><content:encoded>&lt;p&gt;&lt;strong&gt;Just a quick note to anyone who stumbles across the git history of this site.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When I first started this blog I used the &lt;a href=&quot;https://github.com/pages-themes/slate&quot;&gt;slate&lt;/a&gt; theme since it was suppored by github pages. Out of the box this is great since it gave a clean interface with basically zero work; however, making even simple changes required a lot more work than I thought they should. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt; % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit -m &lt;span class=&quot;token string&quot;&gt;&quot;Merged Java.gitignore change for .xyz file extensions&quot;&lt;/span&gt;
+ % &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Site Theme Switch]]></title><link>https://zdub.io/posts/site-theme-switch</link><guid isPermaLink="false">https://zdub.io/posts/site-theme-switch</guid><pubDate>Sun, 13 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 864px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8a416f23efe73cd91ffb5ade2ced48f7/69bf2/markus-gempeler-972977-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAUILvCIkf//EABoQAQACAwEAAAAAAAAAAAAAAAIAARESISL/2gAIAQEAAQUC7gu5tUGE3XgcP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAICAwEAAAAAAAAAAAAAAAABESECEmEx/9oACAEBAAY/AmsXahIs8ZrHZOqxH//EABwQAQEAAgIDAAAAAAAAAAAAAAERACFBUTFhkf/aAAgBAQABPyFAzvs8Zb7iwJM7PjcahE8jcBPTti5Wy5//2gAMAwEAAgADAAAAEIQv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAgEBPxDUVH//xAAdEAEBAAIDAAMAAAAAAAAAAAABEQAhMUFRcZGx/9oACAEBAAE/EPBLJ1+85U3apFCce6v1jIbkpJT5MQ4+8HjTo1rDR8L3VUxJ1Se+3P/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/8a416f23efe73cd91ffb5ade2ced48f7/01472/markus-gempeler-972977-unsplash.webp 240w,
+/static/8a416f23efe73cd91ffb5ade2ced48f7/222bd/markus-gempeler-972977-unsplash.webp 480w,
+/static/8a416f23efe73cd91ffb5ade2ced48f7/177e8/markus-gempeler-972977-unsplash.webp 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/8a416f23efe73cd91ffb5ade2ced48f7/3bc27/markus-gempeler-972977-unsplash.jpg 240w,
+/static/8a416f23efe73cd91ffb5ade2ced48f7/98431/markus-gempeler-972977-unsplash.jpg 480w,
+/static/8a416f23efe73cd91ffb5ade2ced48f7/69bf2/markus-gempeler-972977-unsplash.jpg 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/8a416f23efe73cd91ffb5ade2ced48f7/69bf2/markus-gempeler-972977-unsplash.jpg&quot;
+          alt=&quot;random image&quot;
+          title=&quot;random image&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Just a quick note to anyone who stumbles across the git history of this site.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When I first started this blog I used the &lt;a href=&quot;https://github.com/pages-themes/slate&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;slate&lt;/a&gt; theme since it was suppored by github pages. Out of the box this is great since it gave a clean interface with basically zero work; however, making even simple changes required a lot more work than I thought they should. &lt;/p&gt;
 &lt;p&gt;The current iteration of Jekyll obscures a lot of what’s happening with the themes and overriding styles required basically pulling down the git repo of the theme, including the various layouts and styles, and then making the tweaks I desired. &lt;/p&gt;
-&lt;p&gt;I was not a fan of this, so I refactored most of the styling to use &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;bootstrap&lt;/a&gt; instead. The look of the site is virtually unchanged, but my piece of mind is much improved. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Eventually I will have real posts!]]></title><description><![CDATA[Slowly but surely making progress. Who would have guessed having an infant in the house would slow things down so much? ]]></description><link>https://zdub.io/eventually-i-will-have-real-posts/</link><guid isPermaLink="false">https://zdub.io/eventually-i-will-have-real-posts/</guid><content:encoded>&lt;p&gt;Slowly but surely making progress. Who would have guessed having an infant in the house would slow things down so much? &lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;I was not a fan of this, so I refactored most of the styling to use &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;bootstrap&lt;/a&gt; instead. The look of the site is virtually unchanged, but my piece of mind is much improved. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Eventually I will have real posts!]]></title><description><![CDATA[Just getting started]]></description><link>https://zdub.io/posts/eventually-i-will-have-real-posts</link><guid isPermaLink="false">https://zdub.io/posts/eventually-i-will-have-real-posts</guid><pubDate>Sun, 14 May 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 864px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ef96ddfc6e79c8bf2d6559c324231dd2/69bf2/dawid-zawila-279998-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQACA//EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAFbgFudEoaR/8QAGhAAAwEAAwAAAAAAAAAAAAAAAAECBAMREv/aAAgBAQABBQKvI5kaRy6KdvVQ9N9//8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIv/aAAgBAwEBPwGoZf/EABYRAQEBAAAAAAAAAAAAAAAAAAAhIv/aAAgBAgEBPwHSv//EABkQAAEFAAAAAAAAAAAAAAAAABAAAiExYf/aAAgBAQAGPwKS3FQ//8QAGhAAAwEAAwAAAAAAAAAAAAAAAAERMUFRgf/aAAgBAQABPyFlihXDqFYxooXHw9M5w//aAAwDAQACAAMAAAAQ8A//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDAQE/EHqNk//EABcRAAMBAAAAAAAAAAAAAAAAAAABETH/2gAIAQIBAT8QWGU//8QAHBABAAICAwEAAAAAAAAAAAAAAQARIWExUZGh/9oACAEBAAE/EH0I6F1bLyjrUe7PZTKQQc5iEKhXf5E4Q65n/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/ef96ddfc6e79c8bf2d6559c324231dd2/01472/dawid-zawila-279998-unsplash.webp 240w,
+/static/ef96ddfc6e79c8bf2d6559c324231dd2/222bd/dawid-zawila-279998-unsplash.webp 480w,
+/static/ef96ddfc6e79c8bf2d6559c324231dd2/177e8/dawid-zawila-279998-unsplash.webp 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/ef96ddfc6e79c8bf2d6559c324231dd2/3bc27/dawid-zawila-279998-unsplash.jpg 240w,
+/static/ef96ddfc6e79c8bf2d6559c324231dd2/98431/dawid-zawila-279998-unsplash.jpg 480w,
+/static/ef96ddfc6e79c8bf2d6559c324231dd2/69bf2/dawid-zawila-279998-unsplash.jpg 864w&quot;
+          sizes=&quot;(max-width: 864px) 100vw, 864px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/ef96ddfc6e79c8bf2d6559c324231dd2/69bf2/dawid-zawila-279998-unsplash.jpg&quot;
+          alt=&quot;Random Image&quot;
+          title=&quot;Random Image&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Slowly but surely making progress. Who would have guessed having an infant in the house would slow things down so much? &lt;/p&gt;</content:encoded></item></channel></rss>
